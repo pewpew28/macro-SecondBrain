@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SecondBrain</string>
+    <string name="title_home">Home</string>
+    <string name="title_note">Notes</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_profile">Profile</string>
+</resources>
