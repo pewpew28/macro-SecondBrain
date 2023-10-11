@@ -1,6 +1,7 @@
 package com.example.secondbrain
 
 import android.app.Notification
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -9,6 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.onNavDestinationSelected
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.secondbrain.databinding.ActivityMainBinding
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         val navView: BottomNavigationView = binding.navView
 
@@ -46,11 +49,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when(item.itemId){
-            R.id.notification->{
-                Toast.makeText(this,"This Notification",Toast.LENGTH_LONG).show()
-                return true
-            } else -> super.onOptionsItemSelected(item)
+        when (item.getItemId()) {
+            android.R.id.home ->
+                findNavController(R.id.nav_host_fragment_activity_main).navigate(R.id.navigation_home)
+            R.id.navigation_notifications ->
+                findNavController(R.id.nav_host_fragment_activity_main).navigate(R.id.navigation_notifications)
         }
+        return true
     }
 }
