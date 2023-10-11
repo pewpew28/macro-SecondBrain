@@ -4,7 +4,8 @@
         <item>How To Make dot</item>
         <item>How To Make dot</item>
         <item>How To Make dot</item>
-        <item>How To Make dot</item><item>How To Make dot</item>
+        <item>How To Make dot</item>
+        <item>How To Make dot</item>
         <item>How To Make dot</item>
         <item>How To Make dot</item>
         <item>How To Make dot</item>
@@ -14,9 +15,32 @@
         <item>26-02-2003</item>
         <item>26-02-2003</item>
         <item>26-02-2003</item>
-        <item>26-02-2003</item><item>26-02-2003</item>
         <item>26-02-2003</item>
         <item>26-02-2003</item>
         <item>26-02-2003</item>
+        <item>26-02-2003</item>
+        <item>26-02-2003</item>
+    </string-array>
+    <string-array name="judul_notif">
+        <item>How To Make dot</item>
+        <item>How To Make dot</item>
+        <item>How To Make dot</item>
+        <item>How To Make dot</item>
+        <item>How To Make dot</item>
+        <item>How To Make dot</item>
+        <item>How To Make dot</item>
+        <item>How To Make dot</item>
+    </string-array>
+
+    <string-array name="desc">
+        <item>loremipsumkjskahaskdhaksjdkajshdkajshdkjashdkjahskfmzxcnaiushamsnoiq</item>
+        <item>loremipsumkjskahaskdhaksjdkajshdkajshdkjashdkjahskfmzxcnaiushamsnoiq</item>
+        <item>loremipsumkjskahaskdhaksjdkajshdkajshdkjashdkjahskfmzxcnaiushamsnoiq</item>
+        <item>loremipsumkjskahaskdhaksjdkajshdkajshdkjashdkjahskfmzxcnaiushamsnoiq</item>
+        <item>loremipsumkjskahaskdhaksjdkajshdkajshdkjashdkjahskfmzxcnaiushamsnoiq</item>
+        <item>loremipsumkjskahaskdhaksjdkajshdkajshdkjashdkjahskfmzxcnaiushamsnoiq</item>
+        <item>loremipsumkjskahaskdhaksjdkajshdkajshdkjashdkjahskfmzxcnaiushamsnoiq</item>
+        <item>loremipsumkjskahaskdhaksjdkajshdkajshdkjashdkjahskfmzxcnaiushamsnoiq</item>
+
     </string-array>
 </resources>
