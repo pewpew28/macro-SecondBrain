@@ -11,7 +11,7 @@ import com.example.secondbrain.R
 class CategoryAdapter(var data : ArrayList<ModelCategory>, var context: Activity?) : RecyclerView.Adapter<CategoryAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item_category,parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_category,parent, false)
         return MyViewHolder(view)
     }
 
