@@ -4,39 +4,65 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.secondbrain.R
 import com.example.secondbrain.databinding.FragmentNoteBinding
 
 class NoteFragment : Fragment() {
 
-    private var _binding: FragmentNoteBinding? = null
+    private var binding: FragmentNoteBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var rvCategory: RecyclerView
 
+//     This property is only valid between onCreateView and
+//     onDestroyView.
+//    private val binding get() = _binding!!
+//
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val noteViewModel =
-            ViewModelProvider(this)[NoteViewModel::class.java]
+        //Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_note, container, false)
+        //Recycle View Category
 
-        _binding = FragmentNoteBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        val lm = LinearLayoutManager(activity)
+        rvCategory = view.findViewById(R.id.recyclerViewCategory)
 
-        val textView: TextView = binding.textDashboard
-        noteViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
+        val adapterCategory = CategoryAdapter(ArrayCategory,activity)
+        rvCategory.setHasFixedSize(true)
+        rvCategory.layoutManager = lm
+        rvCategory.adapter = adapterCategory
+
+        return view
     }
+    //Data Dummy
+    private val ArrayCategory : ArrayList<ModelCategory>get(){
 
+        val arraybaju = ArrayList<ModelCategory>()
+
+        val category1 = ModelCategory()
+        category1.title = "Projects"
+        val category2 = ModelCategory()
+        category2.title = "Areas"
+        val category3 = ModelCategory()
+        category3.title = "Resources"
+        val category4 = ModelCategory()
+        category4.title = "Archives"
+
+        arraybaju.add(category1)
+        arraybaju.add(category2)
+        arraybaju.add(category3)
+        arraybaju.add(category4)
+
+        return arraybaju
+    }
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
+        binding = null
     }
+
+
 }
