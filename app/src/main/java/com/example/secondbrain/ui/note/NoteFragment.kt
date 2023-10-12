@@ -41,7 +41,7 @@ class NoteFragment : Fragment() {
     //Data Dummy
     private val ArrayCategory : ArrayList<ModelCategory>get(){
 
-        val arraybaju = ArrayList<ModelCategory>()
+        val arraycategory = ArrayList<ModelCategory>()
 
         val category1 = ModelCategory()
         category1.title = "Projects"
@@ -52,12 +52,12 @@ class NoteFragment : Fragment() {
         val category4 = ModelCategory()
         category4.title = "Archives"
 
-        arraybaju.add(category1)
-        arraybaju.add(category2)
-        arraybaju.add(category3)
-        arraybaju.add(category4)
+        arraycategory.add(category1)
+        arraycategory.add(category2)
+        arraycategory.add(category3)
+        arraycategory.add(category4)
 
-        return arraybaju
+        return arraycategory
     }
     override fun onDestroyView() {
         super.onDestroyView()
