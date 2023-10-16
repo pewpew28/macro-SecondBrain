@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.secondbrain.R
+import com.example.secondbrain.adapter.CategoryAdapter
 import com.example.secondbrain.databinding.FragmentNoteBinding
+import com.example.secondbrain.model.categoryModel
 
 class NoteFragment : Fragment() {
 
@@ -39,17 +41,17 @@ class NoteFragment : Fragment() {
         return view
     }
     //Data Dummy
-    private val ArrayCategory : ArrayList<ModelCategory>get(){
+    private val ArrayCategory : ArrayList<categoryModel>get(){
 
-        val arraybaju = ArrayList<ModelCategory>()
+        val arraybaju = ArrayList<categoryModel>()
 
-        val category1 = ModelCategory()
+        val category1 = categoryModel()
         category1.title = "Projects"
-        val category2 = ModelCategory()
+        val category2 = categoryModel()
         category2.title = "Areas"
-        val category3 = ModelCategory()
+        val category3 = categoryModel()
         category3.title = "Resources"
-        val category4 = ModelCategory()
+        val category4 = categoryModel()
         category4.title = "Archives"
 
         arraybaju.add(category1)

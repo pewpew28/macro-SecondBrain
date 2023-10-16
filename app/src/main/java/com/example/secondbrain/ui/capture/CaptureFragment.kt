@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.secondbrain.databinding.FragmentCalendarBinding
 
-class CalendarFragment : Fragment() {
+class CaptureFragment : Fragment() {
 
     private var _binding: FragmentCalendarBinding? = null
 

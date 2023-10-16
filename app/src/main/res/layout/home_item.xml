@@ -1,50 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="14dp">
+    android:layout_width="295dp"
+    android:layout_height="98dp"
+    android:layout_marginBottom="14dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="50dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="295dp"
+        android:layout_height="98dp"
         android:gravity="center_vertical"
         android:padding="12dp">
 
-        <ImageView
-            android:id="@+id/iv_circle"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:src="@drawable/circle_safe" />
-
-        <Space
-            android:layout_width="12dp"
-            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="98dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_judul"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="235dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
                 android:text="tes"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="6dp" />
-
             <TextView
                 android:id="@+id/tv_tanggal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="235dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentTop="true"
                 android:maxLength="100"
                 android:text="tes"
                 android:textSize="14sp" />
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/belum_dibaca" />
 
     </LinearLayout>
 
