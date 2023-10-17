@@ -1,5 +1,5 @@
 package com.example.secondbrain.model
 
-data class categoryModel(
+data class FolderModel (
     var title : String? = null
 )

@@ -23,7 +23,7 @@ class CalendarFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val captureViewModel =
-            ViewModelProvider(this)[CaptureViewModel::class.java]
+            ViewModelProvider(this)[CalendarViewModel::class.java]
 
         _binding = FragmentCalendarBinding.inflate(inflater, container, false)
         val root: View = binding.root
