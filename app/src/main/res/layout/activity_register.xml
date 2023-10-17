@@ -51,7 +51,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle_5">
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_5"
+        app:startIconDrawable="@drawable/baseline_person_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/nameEt"
@@ -72,7 +73,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/name">
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:startIconDrawable="@drawable/baseline_email_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailEt"
@@ -93,7 +95,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email">
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:startIconDrawable="@drawable/baseline_local_phone_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phoneET"
@@ -116,7 +119,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/phone"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/baseline_lock_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passET"
@@ -138,7 +142,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pass"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/baseline_lock_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/confirmPassET"

@@ -30,5 +30,10 @@
         android:name="com.example.secondbrain.ui.note.NoteFragment"
         android:label="@string/title_note"
         tools:layout="@layout/fragment_note" />
+    <fragment
+        android:id="@+id/navigation_capture"
+        android:name="com.example.secondbrain.ui.capture.CaptureFragment"
+        android:label="@string/title_capture"
+        tools:layout="@layout/fragment_capture" />
 
 </navigation>
