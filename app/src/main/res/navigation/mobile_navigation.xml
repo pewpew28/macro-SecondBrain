@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/navigation_calendar"
-        android:name="com.example.secondbrain.ui.calendar.CaptureFragment"
+        android:name="com.example.secondbrain.ui.calendar.CalendarFragment"
         android:label="@string/title_calendar"
         tools:layout="@layout/fragment_calendar"/>
     <fragment
@@ -30,4 +30,5 @@
         android:name="com.example.secondbrain.ui.note.NoteFragment"
         android:label="@string/title_note"
         tools:layout="@layout/fragment_note" />
+
 </navigation>

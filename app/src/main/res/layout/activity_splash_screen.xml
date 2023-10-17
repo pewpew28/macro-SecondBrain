@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Primary"
     tools:context=".splash_screen">
 
     <com.airbnb.lottie.LottieAnimationView
-        app:lottie_fileName="note.json"
-        app:lottie_autoPlay="true"
+        android:src="@drawable/logo_aplikasi"
         android:layout_width="250dp"
         android:layout_height="250dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,6 +16,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.478" />
+
+    <TextView
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/celestial_d"
+        android:textAppearance="@style/celestial_d"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

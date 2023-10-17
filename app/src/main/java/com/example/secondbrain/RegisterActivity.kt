@@ -18,7 +18,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
 
         etUsername = findViewById(R.id.emailEt)
         etPassword = findViewById(R.id.passET)
-        etConfirmPassword = findViewById(R.id.confirmPassEt)
+        etConfirmPassword = findViewById(R.id.confirmPassET)
 
         val btnRegister : Button = findViewById(R.id.btn_regis)
         btnRegister.setOnClickListener(this)

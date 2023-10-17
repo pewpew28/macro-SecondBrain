@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SecondBrain</string>
+    <string name="app_name">Second Brain</string>
     <string name="title_home">Home</string>
     <string name="title_note">Notes</string>
     <string name="title_notifications">Notifications</string>
@@ -10,5 +10,26 @@
     </string>
     <string name="welcome_bac">
     welcome Back !
+    </string>
+    <string name="masuk">
+    Sign In
+    </string>
+    <string name="buat_akun">
+    Sign Up
+    </string>
+    <string name="we_assist_y">
+    We assist you in :
+    </string>
+    <string name="taking_note">
+    Taking notes
+    </string>
+    <string name="managing_yo">
+    Managing your Notes
+    </string>
+    <string name="reminding_y">
+    Reminding you of your tasks
+    </string>
+    <string name="create_your">
+    Create your new account!
     </string>
 </resources>

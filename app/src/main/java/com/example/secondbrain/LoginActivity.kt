@@ -41,8 +41,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         }
         val btnLogin: Button = findViewById(R.id.btn_login)
         btnLogin.setOnClickListener(this)
-        val btnRegister : Button = findViewById(R.id.btn_regis)
-        btnRegister.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -58,12 +56,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 )
                 resultLauncher.launch(intent)
             }
-
-            R.id.btn_regis -> {
-                val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
-                startActivity(intent)
-            }
-
         }
     }
 }
