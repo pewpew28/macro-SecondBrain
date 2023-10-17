@@ -17,7 +17,7 @@ class splash_screen : AppCompatActivity() {
 
         CoroutineScope(Dispatchers.Main).launch {
             delay(2500)
-            val intent = Intent(this@splash_screen, LoginActivity::class.java)
+            val intent = Intent(this@splash_screen, LandingPage::class.java)
             startActivity(intent)
             finish()
         }

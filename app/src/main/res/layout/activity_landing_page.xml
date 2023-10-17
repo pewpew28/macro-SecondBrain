@@ -4,6 +4,143 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LandingPage">
+    android:background="#65AFFF">
+
+
+    <View
+        android:id="@+id/ellipse_105"
+        android:layout_width="614dp"
+        android:layout_height="524dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#F4D06F"
+        app:layout_constraintBottom_toTopOf="@+id/deskripsi_a"
+        tools:layout_editor_absoluteX="-102dp" />
+
+    <View
+        android:id="@+id/ellipse_106"
+        android:layout_width="614dp"
+        android:layout_height="524dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#F4D06F"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi_a"
+        tools:layout_editor_absoluteX="-102dp" />
+
+    <TextView
+        android:id="@+id/celestial_d"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/celestial_d"
+        android:textAppearance="@style/celestial_d"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/logo_aplikasi"
+        android:layout_width="205dp"
+        android:layout_height="188dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/celestial_d">
+
+        <View
+            android:layout_width="205dp"
+            android:layout_height="188dp"
+            android:background="@drawable/logo_aplikasi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/rectangle_4"
+        android:textColor="@color/Background"
+        android:text="@string/masuk"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regis" />
+
+
+    <Button
+        android:id="@+id/regis"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/rectangle_3"
+        android:textColor="@color/Background"
+        android:textStyle="bold"
+        android:text="@string/buat_akun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi_a" />
+
+    <RelativeLayout
+        android:id="@+id/deskripsi_a"
+        android:layout_width="245dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_aplikasi">
+
+        <TextView
+            android:id="@+id/we_assist_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/we_assist_y"
+            android:textAppearance="@style/we_assist_y"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <TextView
+            android:id="@+id/taking_note"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_below="@+id/we_assist_y"
+            android:layout_marginTop="14dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/taking_note"
+            android:textAppearance="@style/taking_note" />
+
+        <TextView
+            android:id="@+id/managing_yo"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_below="@+id/taking_note"
+            android:layout_marginTop="14dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/managing_yo"
+            android:textAppearance="@style/managing_yo" />
+
+        <TextView
+            android:id="@+id/reminding_y"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_below="@+id/managing_yo"
+            android:layout_marginTop="14dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/reminding_y"
+            android:textAppearance="@style/reminding_y" />
+
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
