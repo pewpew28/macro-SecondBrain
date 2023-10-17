@@ -29,6 +29,15 @@ class CategoryAdapter(var parents: List<CategoryModel>) : RecyclerView.Adapter<C
             layoutManager = LinearLayoutManager(holder.recyclerView.context,RecyclerView.VERTICAL, false)
             adapter = FolderAdapter(FolderDataFactory.getChildren(5))
         }
+
+        //Expandable Functionality
+        val isExpandable = category.isExpandable
+        holder.recyclerView.visibility = if (isExpandable) View.VISIBLE else View.GONE
+
+        holder.category.setOnClickListener(){
+            category.isExpandable = !category.isExpandable
+            notifyItemChanged(position)
+        }
     }
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
