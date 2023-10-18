@@ -1,12 +1,15 @@
 package com.example.secondbrain.adapter
 
 import android.content.Context
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.secondbrain.databinding.HomeItemBinding
 import com.example.secondbrain.model.homeModel
 import com.example.secondbrain.ui.home.HomeFragment
+import com.example.secondbrain.ui.note.OpenNoteActivity
 
 class HomeAdapter(private val list: List<homeModel>, private val context: HomeFragment) :
     RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
@@ -27,6 +30,12 @@ class HomeAdapter(private val list: List<homeModel>, private val context: HomeFr
                 binding.tvJudul.text = this.judul
                 binding.tvTanggal.text = this.tanggal
             }
+        }
+        holder.itemView.setOnClickListener {
+            val context = it!!.context
+            val intent = Intent(context, OpenNoteActivity::class.java)
+            Log.d("MyApp", "Tombol diklik, memulai OpenNoteActivity")
+            context.startActivity(intent)
         }
     }
 }

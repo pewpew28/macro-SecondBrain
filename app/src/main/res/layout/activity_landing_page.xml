@@ -9,23 +9,22 @@
 
     <View
         android:id="@+id/ellipse_105"
-        android:layout_width="614dp"
-        android:layout_height="524dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="#F4D06F"
-        app:layout_constraintBottom_toTopOf="@+id/deskripsi_a"
-        tools:layout_editor_absoluteX="-102dp" />
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ellipse105"
+        app:layout_constraintBottom_toTopOf="@+id/deskripsi_a" />
 
     <View
         android:id="@+id/ellipse_106"
-        android:layout_width="614dp"
-        android:layout_height="524dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="#F4D06F"
-        app:layout_constraintTop_toBottomOf="@+id/deskripsi_a"
-        tools:layout_editor_absoluteX="-102dp" />
+        android:background="@drawable/ellipse104"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi_a" />
 
     <TextView
         android:id="@+id/celestial_d"

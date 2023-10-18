@@ -7,6 +7,16 @@
     tools:context=".ui.home.HomeFragment"
     android:background="@color/Background">
 
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle56"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -29,10 +39,9 @@
             android:layout_width="120dp"
             android:layout_height="24dp"
             android:background="@drawable/rectangle_6"
-            android:backgroundTint="@color/Secondary"
             android:text="Learn More"
             android:textSize="12sp"
-            android:textColor="@color/Background"/>
+            android:textColor="@color/Neutral"/>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
