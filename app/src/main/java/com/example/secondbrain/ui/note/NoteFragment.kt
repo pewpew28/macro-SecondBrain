@@ -12,7 +12,7 @@ import com.example.secondbrain.adapter.CategoryAdapter
 import com.example.secondbrain.databinding.FragmentNoteBinding
 import com.example.secondbrain.model.CategoryDataFactory
 
-class NoteFragment : Fragment() {
+class  NoteFragment : Fragment() {
 
     private var binding: FragmentNoteBinding? = null
 
