@@ -11,32 +11,26 @@ import com.example.secondbrain.databinding.FragmentCaptureBinding
 
 class CaptureFragment : Fragment() {
 
-//    private var _binding: FragmentCaptureBinding? = null
-//
-//    // This property is only valid between onCreateView and
-//    // onDestroyView.
-//    private val binding get() = _binding!!
-//
-//    override fun onCreateView(
-//        inflater: LayoutInflater,
-//        container: ViewGroup?,
-//        savedInstanceState: Bundle?
-//    ): View {
-//        val captureViewModel =
-//            ViewModelProvider(this)[CaptureViewModel::class.java]
-//
-//        _binding = FragmentCalendarBinding.inflate(inflater, container, false)
-//        val root: View = binding.root
-//
-//        val textView: TextView = binding.textNotifications
-//        captureViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
-//        return root
-//    }
-//
-//    override fun onDestroyView() {
-//        super.onDestroyView()
-//        _binding = null
-//    }
+    private var _binding: FragmentCaptureBinding? = null
+
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+
+        _binding = FragmentCaptureBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        return root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
