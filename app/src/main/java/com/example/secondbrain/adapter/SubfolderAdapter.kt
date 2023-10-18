@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.secondbrain.R
 import com.example.secondbrain.model.FolderDataFactory
+import com.example.secondbrain.model.NoteDataFactory
 import com.example.secondbrain.model.SubfolderModel
 
 class SubfolderAdapter (var parents: List<SubfolderModel>) : RecyclerView.Adapter<SubfolderAdapter.MyViewHolder>() {
@@ -26,7 +27,7 @@ class SubfolderAdapter (var parents: List<SubfolderModel>) : RecyclerView.Adapte
         holder.recyclerView.apply {
             layoutManager = LinearLayoutManager(holder.recyclerView.context,
                 RecyclerView.VERTICAL, false)
-            adapter = FolderAdapter(FolderDataFactory.getChildren(5))
+            adapter = NoteAdapter(NoteDataFactory.getChildren(5))
         }
 
         //Expandable Functionality
