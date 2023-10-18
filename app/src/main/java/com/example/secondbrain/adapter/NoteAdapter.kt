@@ -9,13 +9,12 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.secondbrain.R
-import com.example.secondbrain.model.CategoryModel
-import com.example.secondbrain.model.FolderModel
-import com.example.secondbrain.ui.note.FolderActivity
+import com.example.secondbrain.model.NoteModel
+import com.example.secondbrain.ui.note.OpenNoteActivity
 
-class FolderAdapter(private val children: List<FolderModel>) : RecyclerView.Adapter<FolderAdapter.MyViewHolder>(){
+class NoteAdapter (private val children: List<NoteModel>) : RecyclerView.Adapter<NoteAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_folder,parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_note,parent, false)
         return MyViewHolder(view)
     }
 
@@ -24,19 +23,19 @@ class FolderAdapter(private val children: List<FolderModel>) : RecyclerView.Adap
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val folder = children[position]
-        holder.folder.text = folder.title
+        val note = children[position]
+        holder.note.text = note.title
 
         holder.itemView.setOnClickListener {
             val context = it!!.context
-            val intent = Intent(context, FolderActivity::class.java)
-            Log.d("MyApp", "Tombol diklik, memulai FolderActivity")
+            val intent = Intent(context, OpenNoteActivity::class.java)
+            Log.d("MyApp", "Tombol diklik, memulai OpenNoteActivity")
             context.startActivity(intent)
         }
     }
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        val folder : TextView = itemView.findViewById(R.id.tv_folder)
+        val note : TextView = itemView.findViewById(R.id.tv_note)
 
     }
 }
