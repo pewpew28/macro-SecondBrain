@@ -9,7 +9,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.secondbrain.R
-import com.example.secondbrain.model.CategoryModel
 import com.example.secondbrain.model.FolderModel
 import com.example.secondbrain.ui.note.FolderActivity
 

@@ -1,6 +1,8 @@
 package com.example.secondbrain.adapter
 
 import android.content.Context
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -9,6 +11,7 @@ import com.example.secondbrain.databinding.NotifItemBinding
 import com.example.secondbrain.model.homeModel
 import com.example.secondbrain.model.notifModel
 import com.example.secondbrain.ui.home.HomeFragment
+import com.example.secondbrain.ui.note.OpenNoteActivity
 import com.example.secondbrain.ui.notification.NotificationFragment
 
 class NotifAdapter(private val list: List<notifModel>, private val context: NotificationFragment) :
@@ -30,6 +33,12 @@ class NotifAdapter(private val list: List<notifModel>, private val context: Noti
                 binding.tvJudulNotif.text = this.judul
                 binding.tvDesc.text = this.desc
             }
+        }
+        holder.itemView.setOnClickListener {
+            val context = it!!.context
+            val intent = Intent(context, OpenNoteActivity::class.java)
+            Log.d("MyApp", "Tombol diklik, memulai OpenNoteActivity")
+            context.startActivity(intent)
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.example.secondbrain.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -18,7 +19,7 @@ import com.example.secondbrain.R
 import com.example.secondbrain.adapter.HomeAdapter
 import com.example.secondbrain.databinding.FragmentHomeBinding
 import com.example.secondbrain.model.homeModel
-import com.example.secondbrain.ui.capture.CaptureFragment
+import com.example.secondbrain.ui.capture.CaptureActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class HomeFragment : Fragment() {
@@ -47,7 +48,8 @@ class HomeFragment : Fragment() {
         setHomeAdapter()
         val fab = view.findViewById<FloatingActionButton>(R.id.tmbh_catatan)
         fab.setOnClickListener {
-            findNavController().navigate(R.id.navigation_capture)
+            val intent = Intent(context, CaptureActivity::class.java )
+            startActivity(intent)
         }
     }
 

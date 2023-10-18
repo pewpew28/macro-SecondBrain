@@ -11,7 +11,6 @@ import com.example.secondbrain.R
 import com.example.secondbrain.adapter.CategoryAdapter
 import com.example.secondbrain.databinding.FragmentNoteBinding
 import com.example.secondbrain.model.CategoryDataFactory
-import com.example.secondbrain.model.CategoryModel
 
 class NoteFragment : Fragment() {
 
