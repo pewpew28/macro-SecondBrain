@@ -1,5 +1,6 @@
 package com.example.secondbrain.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.secondbrain.R
 import com.example.secondbrain.model.CategoryModel
 import com.example.secondbrain.model.FolderModel
+import com.example.secondbrain.ui.note.FolderActivity
 
 class FolderAdapter(private val children: List<FolderModel>) : RecyclerView.Adapter<FolderAdapter.MyViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -25,7 +27,9 @@ class FolderAdapter(private val children: List<FolderModel>) : RecyclerView.Adap
         holder.folder.text = folder.title
 
         holder.itemView.setOnClickListener {
-            Toast.makeText(it!!.context,"Buka Folder",Toast.LENGTH_SHORT).show()
+            val context = it!!.context
+            val intent = Intent(context, FolderActivity::class.java)
+            context.startActivity(intent)
         }
     }
 
