@@ -27,7 +27,7 @@ class SubfolderAdapter (var parents: List<SubfolderModel>) : RecyclerView.Adapte
         holder.recyclerView.apply {
             layoutManager = LinearLayoutManager(holder.recyclerView.context,
                 RecyclerView.VERTICAL, false)
-            adapter = NoteAdapter(NoteDataFactory.getChildren(5))
+            adapter = NoteAdapter(NoteDataFactory.getChildren(2))
         }
 
         //Expandable Functionality

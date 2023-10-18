@@ -21,7 +21,7 @@ class FolderActivity : AppCompatActivity() {
 
         rvSubfolder.apply {
             layoutManager = LinearLayoutManager ( this@FolderActivity, RecyclerView.VERTICAL, false)
-            adapter = SubfolderAdapter(SubfolderDataFactory.getParents(3))
+            adapter = SubfolderAdapter(SubfolderDataFactory.getParents(2))
         }
     }
 }

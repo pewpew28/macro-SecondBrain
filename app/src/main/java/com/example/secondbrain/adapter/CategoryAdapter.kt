@@ -27,7 +27,7 @@ class CategoryAdapter(var parents: List<CategoryModel>) : RecyclerView.Adapter<C
         holder.category.text = category.title
         holder.recyclerView.apply {
             layoutManager = LinearLayoutManager(holder.recyclerView.context,RecyclerView.VERTICAL, false)
-            adapter = FolderAdapter(FolderDataFactory.getChildren(5))
+            adapter = FolderAdapter(FolderDataFactory.getChildren(2))
         }
 
         //Expandable Functionality
