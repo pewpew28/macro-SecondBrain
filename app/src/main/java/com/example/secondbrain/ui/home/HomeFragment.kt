@@ -12,16 +12,20 @@ import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.secondbrain.R
 import com.example.secondbrain.adapter.HomeAdapter
 import com.example.secondbrain.databinding.FragmentHomeBinding
 import com.example.secondbrain.model.homeModel
+import com.example.secondbrain.ui.capture.CaptureFragment
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class HomeFragment : Fragment() {
 
     private lateinit var _binding: FragmentHomeBinding
     private lateinit var adapter: HomeAdapter
+    private lateinit var add:FloatingActionButton
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -41,6 +45,10 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setHomeAdapter()
+        val fab = view.findViewById<FloatingActionButton>(R.id.tmbh_catatan)
+        fab.setOnClickListener {
+            findNavController().navigate(R.id.navigation_capture)
+        }
     }
 
 
