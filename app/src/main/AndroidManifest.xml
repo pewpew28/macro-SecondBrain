@@ -13,15 +13,20 @@
         android:theme="@style/Theme.Design.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".ui.note.EditNoteActivity"
+            android:exported="false"
+            android:label="@string/title_activity_edit_note"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
             android:name=".ui.capture.CaptureActivity"
             android:exported="false"
-            android:theme="@style/Theme.SecondBrain"
-            android:label="@string/title_capture"/>
+            android:label="@string/title_capture"
+            android:theme="@style/Theme.SecondBrain" />
         <activity
             android:name=".ui.note.OpenNoteActivity"
             android:exported="false"
-            android:theme="@style/Theme.SecondBrain"
-            android:label="@string/title_note"/>
+            android:label="@string/title_note"
+            android:theme="@style/Theme.SecondBrain" />
         <activity
             android:name=".ui.note.FolderActivity"
             android:exported="false" />
