@@ -2,6 +2,6 @@ package com.example.secondbrain.model
 
 data class notifModel(
     val circle : Int,
-    val judul : String,
+    val tanggal : String,
     val desc : String
 )

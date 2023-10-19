@@ -30,7 +30,7 @@ class NotifAdapter(private val list: List<notifModel>, private val context: Noti
         with(holder) {
             with(list[position]) {
                 binding.ivCircle.setImageResource(this.circle)
-                binding.tvJudulNotif.text = this.judul
+                binding.tvTanggal.text = this.tanggal
                 binding.tvDesc.text = this.desc
             }
         }

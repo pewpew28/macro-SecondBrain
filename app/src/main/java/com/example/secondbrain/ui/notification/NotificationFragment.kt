@@ -46,8 +46,8 @@ class NotificationFragment : Fragment() {
     private fun setHomeAdapter() {
         val dataList: MutableList<notifModel> = mutableListOf()
 
-        judul().forEachIndexed { index, judul ->
-            dataList.add(notifModel(circle()[index], judul, desc()[index]))
+        tanggal().forEachIndexed { index, tanggal ->
+            dataList.add(notifModel(circle()[index], tanggal, desc()[index]))
         }
         Log.d("ISI DATANYA ", dataList.toString())
         adapter = NotifAdapter(dataList, this@NotificationFragment)
@@ -55,7 +55,7 @@ class NotificationFragment : Fragment() {
         binding.rvCatatan.adapter = adapter
     }
 
-    private fun judul(): Array<String> = resources.getStringArray(R.array.judul)
+    private fun tanggal(): Array<String> = resources.getStringArray(R.array.tanggal)
     private fun desc(): Array<String> = resources.getStringArray(R.array.desc)
 
     private fun circle(): List<Int> = listOf(

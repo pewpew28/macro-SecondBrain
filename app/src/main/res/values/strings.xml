@@ -36,5 +36,5 @@
     <string name="learn_more_">
     Learn more about Second Brain, C.O.D.E and P.A.R.A!
     </string>
-    <string name="title_activity_edit_note">EditNoteActivity</string>
+    <string name="title_activity_edit_note">EditNote</string>
 </resources>
